@@ -12,7 +12,7 @@ if(isset($_POST["Cedula"])){
 	$Destino = $_POST["Destino"];
 
 
-	$sentencia = "insert into usuario(nombre, apellido, cedula, tipo_de_carro , origen , destino ) values ('".$Nombre."', '".$Apellido."','".$Cedula."','".$Tipo_de_carro."','".$Origen."','".$Destino."')";
+	$sentencia = "insert into usuario(Nombre, Apellido, Cedula, Tipo_de_carro , Origen , Destino ) values ('".$Nombre."', '".$Apellido."','".$Cedula."','".$Tipo_de_carro."','".$Origen."','".$Destino."')";
 
 	if (mysqli_query($conn, $sentencia)){
 		echo "Se guardó ".$Nombre;
